@@ -158,7 +158,8 @@ subprojects {
 
             dependency 'com.alibaba:fastjson:1.2.6'
             dependency 'com.alibaba:druid:1.0.20'
-            dependency('com.alibaba:dubbo:2.5.3') {
+            //dependency('com.alibaba:dubbo:2.5.3') {
+            dependency('com.alibaba:dubbo:2.8.4') {//此项从nexus拉取,dubbox
                 exclude 'org.springframework:spring'
             }
             dependency('com.alibaba:spring-boot-starter-dubbo:1.0.1') {//此项是从nexus拉取(自行编译)
