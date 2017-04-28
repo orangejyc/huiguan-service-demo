@@ -17,13 +17,13 @@ allprojects {
     repositories {
         mavenLocal()
         maven { url "http://maven.aliyun.com/nexus/content/groups/public/"}
-        //maven { url "http://nexus.demo.com:8081/nexus/content/groups/public/" }
+        maven { url "http://60.205.184.158:8081/nexus/content/groups/public/" }
         mavenCentral()
     }
     uploadArchives {
         repositories {
             mavenDeployer {
-                repository(url: "http://nexus.demo.com:8081/nexus/content/repositories/snapshots/") {
+                repository(url: "http://60.205.184.158:8081/nexus/content/repositories/snapshots/") {
                     authentication(userName: "admin", password: "admin123")
                 }
 
@@ -42,7 +42,7 @@ allprojects {
                     licenses {
                         license {
                             name 'No License'
-                            url 'http://www.duiba.com.cn'
+                            url 'http://www.huiguan.com'
                             distribution 'repo'
                         }
                     }
@@ -79,7 +79,7 @@ sonarqube {
     properties {
         property "sonar.projectName", "service-demo"
         property "sonar.projectKey", "com.huiguan:service-demo"
-        property "sonar.host.url","http://127.0.0.1:9000/"
+        property "sonar.host.url","http://60.205.184.158:9000/"
         property "sonar.login","admin"
         property "sonar.password","admin"
     }
