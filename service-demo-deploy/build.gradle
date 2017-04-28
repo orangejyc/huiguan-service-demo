@@ -1,0 +1,13 @@
+/*启动及关联依赖*/
+apply plugin: 'org.springframework.boot'
+
+description = 'service-demo-deploy'
+dependencies {
+    compile project(':service-demo-biz')
+    compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.springframework.boot:spring-boot-starter-actuator')
+    //compile('org.springframework.boot:spring-boot-starter-logging')
+    compile files('lib/spring-boot-starter-dubbo-1.0.0-SNAPSHOT.jar')
+    compile('com.101tec:zkclient')
+    //testCompile('org.springframework:spring-test')
+}

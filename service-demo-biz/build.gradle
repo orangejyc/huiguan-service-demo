@@ -1,0 +1,13 @@
+/*实际的业务逻辑模块,依赖api暴露服务,依赖integration集成服务*/
+description = 'service-demo-biz'
+dependencies {
+
+    //工程依赖
+    compile project(':service-demo-api')
+    compile project(':service-demo-integration')
+
+    //框架依赖
+    compile('org.springframework.boot:spring-boot-starter')
+    compile('com.alibaba:dubbo')
+    //业务依赖
+}

@@ -1,0 +1,5 @@
+/*用于暴露服务能力*/
+description = 'service-demo-api'
+dependencies {
+    testCompile ('junit:junit:4.12')
+}

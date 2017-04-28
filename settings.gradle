@@ -1,0 +1,8 @@
+rootProject.name = 'service-demo'
+include 'service-demo-api'
+include 'service-demo-deploy'
+include 'service-demo-common'
+include 'service-demo-biz'
+include 'service-demo-integration'
+include 'service-demo-dao'
+
