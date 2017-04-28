@@ -26,6 +26,9 @@ allprojects {
         }*/
         compile.exclude module: 'log4j'
         compile.exclude module: 'jboss-logging'
+        compile.exclude module: 'commons-logging'
+        compile.exclude module: 'hibernate-validator'
+
     }
 
     repositories {
@@ -173,7 +176,7 @@ subprojects {
             dependency 'com.alibaba:fastjson:1.2.6'
             dependency 'com.alibaba:druid:1.0.20'
             //dependency('com.alibaba:dubbo:2.5.3') {
-            dependency('com.alibaba:dubbo:2.8.4') {//此项从nexus拉取,dubbox
+            dependency('com.alibaba:dubbo:2.5.3') {//此项从nexus拉取,dubbox
                 exclude 'org.springframework:spring'
             }
             dependency('com.alibaba:spring-boot-starter-dubbo:1.0.1') {//此项是从nexus拉取(自行编译)
@@ -225,13 +228,12 @@ subprojects {
             dependency 'com.google.guava:guava:18.0'
             dependency 'redis.clients:jedis:2.8.1'
             dependency 'com.baidu.disconf:disconf-client:2.6.33'
-            dependency 'javax.validation:validation-api:1.1.0.Final'
             dependency 'org.javassist:javassist:3.20.0-GA'
             dependency 'asm:asm-all:3.3.1'
             dependency 'com.dangdang:elastic-job-core:1.0.6'
             dependency 'com.dangdang:elastic-job-spring:1.0.6'
-            dependency 'cn.com.duiba.tuia:tuia-client:0.1.16-6-SNAPSHOT'
-            dependency 'javax.validation:validation-api:1.1.0.Final'
+            //dependency 'javax.validation:validation-api:1.1.0.Final'
+            //dependency 'org.hibernate:hibernate-validator:5.4.1.Final'
             dependencySet(group: 'org.jboss.resteasy', version: '3.0.7.Final') {
                 entry 'resteasy-jaxrs'
                 entry 'resteasy-client'
