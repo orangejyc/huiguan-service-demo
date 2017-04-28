@@ -6,8 +6,9 @@ dependencies {
     compile project(':service-demo-biz')
     compile('org.springframework.boot:spring-boot-starter-web')
     compile('org.springframework.boot:spring-boot-starter-actuator')
+    compile('com.alibaba:spring-boot-starter-dubbo')
     //compile('org.springframework.boot:spring-boot-starter-logging')
-    compile files('lib/spring-boot-starter-dubbo-1.0.0-SNAPSHOT.jar')
+    //compile files('lib/spring-boot-starter-dubbo-1.0.0-SNAPSHOT.jar')
     compile('com.101tec:zkclient')
     //testCompile('org.springframework:spring-test')
 }

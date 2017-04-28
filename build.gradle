@@ -161,9 +161,9 @@ subprojects {
             dependency('com.alibaba:dubbo:2.5.3') {
                 exclude 'org.springframework:spring'
             }
-            //dependency('com.alibaba:spring-boot-starter-dubbo:1.0.0-SNAPSHOT') {
-            //    exclude 'com.alibaba:dubbo'
-            //}
+            dependency('com.alibaba:spring-boot-starter-dubbo:1.0.1') {//此项是从nexus拉取(自行编译)
+                exclude 'com.alibaba:dubbo'
+            }
 
             dependency 'javax.activation:activation:1.1.1'
             dependency 'org.antlr:antlr:3.4'
