@@ -14,6 +14,11 @@ allprojects {
     sourceCompatibility = 1.8
     targetCompatibility = 1.8
 
+    configurations {
+        compile.exclude module: 'log4j'
+        compile.exclude module: 'jboss-logging'
+    }
+
     repositories {
         mavenLocal()
         maven { url "http://maven.aliyun.com/nexus/content/groups/public/"}
