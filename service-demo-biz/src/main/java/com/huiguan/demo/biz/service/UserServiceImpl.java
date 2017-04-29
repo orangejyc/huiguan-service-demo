@@ -12,6 +12,7 @@ import org.springframework.stereotype.Component;
 @Service(interfaceClass=UserService.class)
 public class UserServiceImpl implements UserService {
 
+    @Override
     public User getUser(User user){
         return user;
     }
