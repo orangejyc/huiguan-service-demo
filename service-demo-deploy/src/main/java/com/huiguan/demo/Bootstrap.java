@@ -6,8 +6,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import java.util.concurrent.CountDownLatch;
-
 /**
  * Created by ansoya on 2017/4/28.
  */
@@ -16,16 +14,7 @@ import java.util.concurrent.CountDownLatch;
 public class Bootstrap {
     private static final Logger log = LoggerFactory.getLogger(Bootstrap.class);
 
-    private Bootstrap() {
-    }
-
-    public static void main(String[] args) {
-        try {
-            SpringApplication.run(Bootstrap.class, args);
-            CountDownLatch latch = new CountDownLatch(10);
-            latch.await();
-        } catch (Exception ex) {
-            log.error("Bootstrap err...", ex);
-        }
+    public static void main(String[] args) throws Exception {
+        SpringApplication.run(Bootstrap.class, args);
     }
 }
