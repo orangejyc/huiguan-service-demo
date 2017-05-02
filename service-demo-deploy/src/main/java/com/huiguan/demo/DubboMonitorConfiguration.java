@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
  * @since $$Revision:1.0.0, $$Date: 2017/5/2 上午10:44 $$
  */
 @Configuration
-public class DubboConfig {
+public class DubboMonitorConfiguration {
 
     @Bean
     public MonitorConfig getMonitorConfig(){
