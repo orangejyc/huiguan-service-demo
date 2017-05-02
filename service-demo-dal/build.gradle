@@ -1,11 +1,11 @@
 /*用于持久实体到存储*/
 description = 'service-demo-dal'
 dependencies {
+    //工程依赖
     compile project(':service-demo-common')
-    compile('org.projectlombok:lombok')
+    //组件依赖
     compile('org.mybatis.spring.boot:mybatis-spring-boot-starter')
-    //compile('org.springframework.boot:spring-boot-starter-jdbc')
-    //compile('mysql:mysql-connector-java')
+    compile('org.projectlombok:lombok')
     runtime('mysql:mysql-connector-java')
 
     testCompile('junit:junit:4.12')

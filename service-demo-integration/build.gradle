@@ -2,11 +2,12 @@
 description = 'service-demo-integration'
 dependencies {
 
-
+    //工程依赖
     compile project(':service-demo-common')
+    //组件依赖
     compile('com.alibaba:spring-boot-starter-dubbo')
     compile('org.projectlombok:lombok')
-
+    //业务依赖
     compile('com.huiguan:rpc-demo-api:1.1-SNAPSHOT')
 
     testCompile('junit:junit:4.12')
