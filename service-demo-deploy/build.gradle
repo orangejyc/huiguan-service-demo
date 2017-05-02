@@ -4,12 +4,8 @@ apply plugin: 'org.springframework.boot'
 description = 'service-demo-deploy'
 dependencies {
     compile project(':service-demo-biz')
-    compile('org.springframework.boot:spring-boot-starter')
+    compile('org.springframework.boot:spring-boot-starter-web')
     compile('org.springframework.boot:spring-boot-starter-actuator')
     compile('com.alibaba:spring-boot-starter-dubbo')
-    //compile('org.springframework.boot:spring-boot-starter-logging')
-    //compile files('lib/spring-boot-starter-dubbo-1.0.0-SNAPSHOT.jar')
     compile('com.101tec:zkclient'){exclude group:'log4j'}
-    //compile('org.slf4j:slf4j-log4j12:1.7.25')
-    //testCompile('org.springframework:spring-test')
 }

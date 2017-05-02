@@ -242,6 +242,10 @@ subprojects {
             }
             dependency 'org.jboss.logging:jboss-logging:3.3.0.Final'
             dependency 'org.apache.kafka:kafka-clients:0.9.0.1'
+            dependency 'org.projectlombok:lombok:1.16.4'
+            dependency 'org.javatuples:javatuples:1.2'
+
+
         }
     }
 }
