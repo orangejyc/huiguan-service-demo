@@ -1,6 +1,6 @@
 /*
  * huiguan.com Inc.
- * Copyright (c) ${YEAR} All Rights Reserved.
+ * Copyright (c) 2017 All Rights Reserved.
  */
 
 package com.huiguan.demo;

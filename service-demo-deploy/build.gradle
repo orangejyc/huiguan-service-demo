@@ -7,5 +7,5 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-web')
     compile('org.springframework.boot:spring-boot-starter-actuator')
     compile('com.alibaba:spring-boot-starter-dubbo')
-    compile('com.101tec:zkclient'){exclude group:'log4j'}
+    compile('com.101tec:zkclient')
 }

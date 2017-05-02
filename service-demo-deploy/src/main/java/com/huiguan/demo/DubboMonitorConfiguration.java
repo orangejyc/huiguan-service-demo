@@ -1,3 +1,8 @@
+/*
+ * huiguan.com Inc.
+ * Copyright (c) 2017 All Rights Reserved.
+ */
+
 package com.huiguan.demo;
 
 import com.alibaba.dubbo.config.MonitorConfig;
