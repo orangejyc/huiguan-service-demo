@@ -6,8 +6,10 @@
 package com.huiguan.demo;
 
 import com.alibaba.boot.dubbo.annotation.EnableDubboConfiguration;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
 
 /**
  * 引导类
@@ -17,8 +19,16 @@ import org.springframework.boot.SpringApplication;
  */
 @SpringBootApplication
 @EnableDubboConfiguration
+@Slf4j
 public class Bootstrap {
     public static void main(String[] args) {
-        SpringApplication.run(Bootstrap.class, args);
+        ApplicationContext context = SpringApplication.run(Bootstrap.class, args);
+
+        //UserMapper userMapper=(UserMapper)context.getBean("userMapper");
+        //log.info("实例化userMapper"+userMapper);
+        //userMapper.selectById(1l);
+        //log.info("调用userMapper#selectById");
+
+
     }
 }

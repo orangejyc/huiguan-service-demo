@@ -1,6 +1,0 @@
-/*用于持久实体到存储*/
-description = 'service-demo-dao'
-dependencies {
-    compile project(':service-demo-common')
-    testCompile ('junit:junit:4.12')
-}

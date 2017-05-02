@@ -1,0 +1,9 @@
+/*用于暴露服务实现*/
+description = 'service-demo-api-impl'
+dependencies {
+    //工程依赖
+    compile project(':service-demo-api')
+    compile project(':service-demo-biz')
+
+    testCompile('junit:junit:4.12')
+}

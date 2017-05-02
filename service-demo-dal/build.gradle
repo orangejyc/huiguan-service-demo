@@ -1,0 +1,12 @@
+/*用于持久实体到存储*/
+description = 'service-demo-dal'
+dependencies {
+    compile project(':service-demo-common')
+    compile('org.projectlombok:lombok')
+    compile('org.mybatis.spring.boot:mybatis-spring-boot-starter')
+    //compile('org.springframework.boot:spring-boot-starter-jdbc')
+    //compile('mysql:mysql-connector-java')
+    runtime('mysql:mysql-connector-java')
+
+    testCompile('junit:junit:4.12')
+}

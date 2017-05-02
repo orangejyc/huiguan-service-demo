@@ -3,7 +3,7 @@ apply plugin: 'org.springframework.boot'
 
 description = 'service-demo-deploy'
 dependencies {
-    compile project(':service-demo-biz')
+    compile project(':service-demo-api-impl')
     compile('org.springframework.boot:spring-boot-starter-web')
     compile('org.springframework.boot:spring-boot-starter-actuator')
     compile('com.alibaba:spring-boot-starter-dubbo')

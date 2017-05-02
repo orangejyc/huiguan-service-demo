@@ -3,7 +3,7 @@
  * Copyright (c) 2017 All Rights Reserved.
  */
 
-package com.huiguan.demo;
+package com.huiguan.demo.configuration;
 
 import com.alibaba.dubbo.config.MonitorConfig;
 import org.springframework.context.annotation.Bean;
@@ -19,8 +19,8 @@ import org.springframework.context.annotation.Configuration;
 public class DubboMonitorConfiguration {
 
     @Bean
-    public MonitorConfig getMonitorConfig(){
-        MonitorConfig monitorConfig=new MonitorConfig();
+    public MonitorConfig getMonitorConfig() {
+        MonitorConfig monitorConfig = new MonitorConfig();
         monitorConfig.setProtocol("registry");
         return monitorConfig;
     }

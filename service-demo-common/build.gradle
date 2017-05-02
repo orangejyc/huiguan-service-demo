@@ -1,5 +1,5 @@
 /*工具及支撑*/
 description = 'service-demo-common'
 dependencies {
-    testCompile ('junit:junit:4.12')
+    testCompile('junit:junit:4.12')
 }

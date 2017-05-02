@@ -3,8 +3,8 @@ description = 'service-demo-biz'
 dependencies {
 
     //工程依赖
-    compile project(':service-demo-api')
     compile project(':service-demo-integration')
+    compile project(':service-demo-dal')
 
     //框架依赖
     compile('org.springframework.boot:spring-boot-starter')

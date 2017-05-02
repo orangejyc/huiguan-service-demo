@@ -4,5 +4,6 @@ include 'service-demo-deploy'
 include 'service-demo-common'
 include 'service-demo-biz'
 include 'service-demo-integration'
-include 'service-demo-dao'
+include 'service-demo-dal'
+include 'service-demo-api-impl'
 
