@@ -29,6 +29,7 @@ public class UserApiImpl implements UserApi {
     @Autowired
     private UserConvert userConvert;
 
+
     @Override
     public UserDTO getUser(UserDTO userDTO) {
         return userConvert.bo2dto(userService.getUser(userConvert.dto2bo(userDTO)));

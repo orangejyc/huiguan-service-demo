@@ -14,5 +14,11 @@ import com.huiguan.demo.biz.bo.UserBO;
  * @since $$Revision:1.0.0, $$Date: 2017/5/2 下午5:50 $$
  */
 public interface UserService {
-    UserBO getUser(UserBO userSO);
+    /**
+     * 根据用户获取用户
+     *
+     * @param userBO 用户业务实体
+     * @return 用户业务实体
+     */
+    UserBO getUser(UserBO userBO);
 }

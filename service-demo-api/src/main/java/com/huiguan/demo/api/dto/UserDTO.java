@@ -14,6 +14,11 @@ import java.io.Serializable;
  * @since $$Revision:1.0.0, $$Date: 2017/4/28 09:36 $$
  */
 public class UserDTO implements Serializable {
+    private static final long serialVersionUID = 1L;
+
+    /**
+     * id
+     */
     private Long id;
 
     public Long getId() {

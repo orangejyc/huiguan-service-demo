@@ -14,7 +14,19 @@ package com.huiguan.demo.api.convert;
  */
 public interface ModelConvert<DTO, BO> {
 
+    /**
+     * 业务实体转化为传输实体
+     *
+     * @param bo 业务实体
+     * @return 传输实体
+     */
     DTO bo2dto(BO bo);
 
+    /**
+     * 传输实体转化为业务实体
+     *
+     * @param dto 传输实体
+     * @return 业务实体
+     */
     BO dto2bo(DTO dto);
 }

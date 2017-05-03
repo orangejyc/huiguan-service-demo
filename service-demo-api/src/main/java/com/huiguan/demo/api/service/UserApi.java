@@ -12,5 +12,11 @@ package com.huiguan.demo.api.service;
  * @since $$Revision:1.0.0, $$Date: 2017/4/28 09:36 $$
  */
 public interface UserApi {
-    com.huiguan.demo.api.dto.UserDTO getUser(com.huiguan.demo.api.dto.UserDTO userRO);
+    /**
+     * 根据用户查询用户
+     *
+     * @param userDTO 用户传输实体
+     * @return 用户传输实体
+     */
+    com.huiguan.demo.api.dto.UserDTO getUser(com.huiguan.demo.api.dto.UserDTO userDTO);
 }

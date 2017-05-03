@@ -16,5 +16,11 @@ import org.apache.ibatis.annotations.Mapper;
  */
 @Mapper
 public interface UserMapper {
+    /**
+     * 根据ID查询用户
+     *
+     * @param id 用户id
+     * @return 用户po
+     */
     UserPO selectById(Long id);
 }
