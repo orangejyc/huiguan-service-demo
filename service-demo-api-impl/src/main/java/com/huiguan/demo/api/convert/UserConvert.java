@@ -9,7 +9,7 @@ import com.huiguan.demo.api.dto.UserDTO;
 import com.huiguan.demo.biz.bo.UserBO;
 
 /**
- * TODO desc
+ * 用户实体转换定义
  *
  * @author juyongcheng
  * @since $$Revision:1.0.0, $$Date: 2017/5/2 下午9:14 $$
