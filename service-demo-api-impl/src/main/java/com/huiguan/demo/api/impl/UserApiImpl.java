@@ -31,7 +31,7 @@ public class UserApiImpl implements UserApi {
 
     @Override
     public UserDTO getUser(UserDTO userDTO) {
-        return userConvert.so2dto(userService.getUser(userConvert.dto2so(userDTO)));
+        return userConvert.bo2dto(userService.getUser(userConvert.dto2bo(userDTO)));
     }
 
 }

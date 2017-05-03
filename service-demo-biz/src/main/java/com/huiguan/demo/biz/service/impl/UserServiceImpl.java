@@ -6,7 +6,7 @@
 package com.huiguan.demo.biz.service.impl;
 
 import com.huiguan.demo.biz.service.UserService;
-import com.huiguan.demo.biz.so.UserSO;
+import com.huiguan.demo.biz.bo.UserBO;
 import com.huiguan.demo.dal.mapper.UserMapper;
 import com.huiguan.demo.integration.IO.RoleIO;
 import com.huiguan.demo.integration.RoleApiInt;
@@ -26,7 +26,7 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private RoleApiInt roleApiInt;
 
-    public UserSO getUser(UserSO userSO) {
+    public UserBO getUser(UserBO userSO) {
         userMapper.selectById(1l);
         roleApiInt.getRole(RoleIO.builder().id(1l).build());
         return userSO;

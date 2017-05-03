@@ -3,7 +3,7 @@
  * Copyright (c) 2017 All Rights Reserved.
  */
 
-package com.huiguan.demo.biz.so;
+package com.huiguan.demo.biz.bo;
 
 import com.huiguan.demo.integration.IO.RoleIO;
 import lombok.Builder;
@@ -21,12 +21,12 @@ import java.io.Serializable;
 @Getter
 @Setter
 @Builder
-public class RoleSO implements Serializable {
+public class RoleBO implements Serializable {
     private Long id;
     private String name;
 
 
-    public static RoleSO fromIO(RoleIO roleIO) {
-        return RoleSO.builder().id(roleIO.getId()).name("name").build();
+    public static RoleBO fromIO(RoleIO roleIO) {
+        return RoleBO.builder().id(roleIO.getId()).name("name").build();
     }
 }

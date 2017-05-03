@@ -3,7 +3,7 @@
  * Copyright (c) 2017 All Rights Reserved.
  */
 
-package com.huiguan.demo.biz.so;
+package com.huiguan.demo.biz.bo;
 
 
 import com.huiguan.demo.dal.po.UserPO;
@@ -22,12 +22,12 @@ import java.io.Serializable;
 @Getter
 @Setter
 @Builder
-public class UserSO implements Serializable {
+public class UserBO implements Serializable {
     private Long id;
     private String name;
 
-    public static UserSO fromPO(UserPO userPO) {
-        return UserSO.builder().id(userPO.getId()).name(userPO.getName()).build();
+    public static UserBO fromPO(UserPO userPO) {
+        return UserBO.builder().id(userPO.getId()).name(userPO.getName()).build();
     }
 
     public UserPO toPO() {

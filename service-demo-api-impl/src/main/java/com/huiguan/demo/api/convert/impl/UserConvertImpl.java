@@ -7,7 +7,7 @@ package com.huiguan.demo.api.convert.impl;
 
 import com.huiguan.demo.api.convert.UserConvert;
 import com.huiguan.demo.api.dto.UserDTO;
-import com.huiguan.demo.biz.so.UserSO;
+import com.huiguan.demo.biz.bo.UserBO;
 import org.springframework.stereotype.Component;
 
 /**
@@ -19,14 +19,14 @@ import org.springframework.stereotype.Component;
 @Component
 public class UserConvertImpl implements UserConvert {
 
-    public UserDTO so2dto(UserSO userSO) {
+    public UserDTO bo2dto(UserBO userBO) {
         UserDTO userDTO = new UserDTO();
-        userDTO.setId(userSO.getId());
+        userDTO.setId(userBO.getId());
         return userDTO;
     }
 
-    public UserSO dto2so(UserDTO userDTO) {
-        return UserSO.builder().id(userDTO.getId()).name("name").build();
+    public UserBO dto2bo(UserDTO userDTO) {
+        return UserBO.builder().id(userDTO.getId()).name("name").build();
     }
 
 }

@@ -12,9 +12,9 @@ package com.huiguan.demo.api.convert;
  * @author juyongcheng
  * @since $$Revision:1.0.0, $$Date: 2017/5/2 下午9:07 $$
  */
-public interface ModelConvert<DTO, SO> {
+public interface ModelConvert<DTO, BO> {
 
-    DTO so2dto(SO so);
+    DTO bo2dto(BO bo);
 
-    SO dto2so(DTO dto);
+    BO dto2bo(DTO dto);
 }

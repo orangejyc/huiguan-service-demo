@@ -6,7 +6,7 @@
 package com.huiguan.demo.api.convert;
 
 import com.huiguan.demo.api.dto.UserDTO;
-import com.huiguan.demo.biz.so.UserSO;
+import com.huiguan.demo.biz.bo.UserBO;
 
 /**
  * TODO desc
@@ -14,5 +14,5 @@ import com.huiguan.demo.biz.so.UserSO;
  * @author juyongcheng
  * @since $$Revision:1.0.0, $$Date: 2017/5/2 下午9:14 $$
  */
-public interface UserConvert extends ModelConvert<UserDTO, UserSO> {
+public interface UserConvert extends ModelConvert<UserDTO, UserBO> {
 }
