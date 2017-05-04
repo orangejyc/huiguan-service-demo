@@ -1,0 +1,6 @@
+bash-demo:
+    image: bashell/alpine-bash:latest
+    restart: always
+    labels:
+        aliyun.scale: "2"
+

@@ -8,6 +8,11 @@ dependencies {
 
     //框架依赖
     compile('org.springframework.boot:spring-boot-starter')
+
     compile('com.alibaba:dubbo')
+    
+    //lib依赖
+    compile('org.projectlombok:lombok')
+
     //业务依赖
 }
