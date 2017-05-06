@@ -257,7 +257,7 @@ subprojects {
             dependency 'org.javatuples:javatuples:1.2'
 
             //huiguan-commons
-            dependency 'com.huiguan:huiguan-commons:1.0.0-SNAPSHOT'
+            dependency 'com.huiguan:huiguan-commons:1.0.1-SNAPSHOT'
 
         }
     }
