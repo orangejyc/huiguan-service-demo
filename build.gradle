@@ -256,6 +256,8 @@ subprojects {
             dependency 'org.projectlombok:lombok:1.16.4'
             dependency 'org.javatuples:javatuples:1.2'
 
+            //huiguan-commons
+            dependency 'com.huiguan:huiguan-commons:1.0.0-SNAPSHOT'
 
         }
     }

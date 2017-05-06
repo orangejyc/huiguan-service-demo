@@ -5,6 +5,9 @@
 
 package com.huiguan.demo.api.service;
 
+import com.huiguan.commons.results.Result;
+import com.huiguan.demo.api.dto.UserDTO;
+
 /**
  * 对外暴露服务接口
  *
@@ -18,5 +21,5 @@ public interface UserApi {
      * @param userDTO 用户传输实体
      * @return 用户传输实体
      */
-    com.huiguan.demo.api.dto.UserDTO getUser(com.huiguan.demo.api.dto.UserDTO userDTO);
+    Result<UserDTO> getUser(com.huiguan.demo.api.dto.UserDTO userDTO);
 }

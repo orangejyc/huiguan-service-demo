@@ -11,6 +11,8 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
+
 /**
  * 角色接入实体
  *
@@ -20,7 +22,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Builder
-public class RoleIO {
+public class RoleIO  implements Serializable{
     private Long id;
 
     public static RoleIO fromDTO(RoleDTO roleDTO) {

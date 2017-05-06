@@ -5,6 +5,7 @@
 
 package com.huiguan.demo.integration;
 
+import com.huiguan.commons.results.Result;
 import com.huiguan.demo.integration.IO.RoleIO;
 
 
@@ -16,6 +17,6 @@ import com.huiguan.demo.integration.IO.RoleIO;
  */
 public interface RoleApiInt {
 
-    RoleIO getRole(RoleIO roleIO);
+    Result<RoleIO> getRole(RoleIO roleIO);
 
 }

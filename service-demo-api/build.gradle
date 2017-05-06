@@ -1,5 +1,6 @@
 /*用于暴露服务能力*/
 description = 'service-demo-api'
 dependencies {
+    compile('com.huiguan:huiguan-commons')
     testCompile('junit:junit:4.12')
 }

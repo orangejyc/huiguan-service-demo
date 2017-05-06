@@ -6,8 +6,11 @@
 package com.huiguan.demo.integration.impl;
 
 import com.alibaba.boot.dubbo.annotation.DubboConsumer;
+import com.huiguan.commons.results.Result;
+import com.huiguan.commons.results.Results;
 import com.huiguan.demo.integration.IO.RoleIO;
 import com.huiguan.demo.integration.RoleApiInt;
+import com.huiguan.rpc.api.entity.RoleDTO;
 import com.huiguan.rpc.api.service.RoleApi;
 import org.springframework.stereotype.Component;
 
@@ -23,8 +26,9 @@ public class RoleApiIntImpl implements RoleApiInt {
     @DubboConsumer(check = false)
     private RoleApi roleApi;
 
-    public RoleIO getRole(RoleIO roleIO) {
-        return RoleIO.fromDTO(roleApi.getRole(roleIO.toDTO()));
-        //return RoleIO.fromDTO(roleApi.getRole(roleDTO));
+    public Result<RoleIO> getRole(RoleIO roleIO) {
+        Result<RoleDTO> result=roleApi.getRole(roleIO.toDTO());
+        return Results.newSuccessResult(RoleIO.fromDTO(result.getData()));
+
     }
 }

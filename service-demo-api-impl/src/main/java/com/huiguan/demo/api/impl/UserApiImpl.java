@@ -6,6 +6,8 @@
 package com.huiguan.demo.api.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
+import com.huiguan.commons.results.Result;
+import com.huiguan.commons.results.Results;
 import com.huiguan.demo.api.convert.UserConvert;
 import com.huiguan.demo.api.dto.UserDTO;
 import com.huiguan.demo.api.service.UserApi;
@@ -31,8 +33,8 @@ public class UserApiImpl implements UserApi {
 
 
     @Override
-    public UserDTO getUser(UserDTO userDTO) {
-        return userConvert.bo2dto(userService.getUser(userConvert.dto2bo(userDTO)));
+    public Result<UserDTO> getUser(UserDTO userDTO) {
+        return Results.newSuccessResult(userConvert.bo2dto(userService.getUser(userConvert.dto2bo(userDTO))));
     }
 
 }
